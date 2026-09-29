@@ -70,7 +70,7 @@ echo -e "\n[7/7] 🔷 Generating C# 12 / .NET 8 (Primary Constructor Records & N
 "${POLYXML_BIN}" generate "${SCHEMA_PATH}" \
   --lang csharp \
   --backend source-gen \
-  --package "Financial.Iso20022.Pacs008" \
+  --namespace "Financial.Iso20022.Pacs008" \
   --out generated/csharp
 
 

@@ -3,9 +3,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import StrEnum
-from typing import Self
+from typing import Annotated, Self
 
-type ActiveCurrencyCode = str
+type ActiveCurrencyCode = Annotated[str, ("polyxml_patterns", ("[A-Z]{3,3}",))]
 
 class ChargeBearerType(StrEnum):
     DEBT = "DEBT"
